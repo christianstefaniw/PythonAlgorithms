@@ -7,6 +7,7 @@ def jump_search(arr, val):
     left, right = 0, 0
 
     while left < length and arr[left] <= val:
+        print(arr[left])
         right = min(length - 1, left + jump)
         if arr[left] <= val <= arr[right]:
             break
