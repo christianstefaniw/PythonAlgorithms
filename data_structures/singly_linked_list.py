@@ -1,5 +1,3 @@
-# super simple singly linked list
-
 class Node:
     def __init__(self, data):
         self.data = data
@@ -23,7 +21,7 @@ class SinglyLinkedList:
         node = self.head
         while node:
             yield node.data
-            node = node.next
+            node = node.get_next()
 
     def __len__(self):
         return len(tuple(iter(self)))
